@@ -210,7 +210,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 4rem;
+	justify-content: space-around;
+	/*gap: 4rem;*/
 }
 
 /*SETUP OF CARDS*/
@@ -221,7 +222,7 @@ main{
 	border: var(--BORDER-LIGHT);
 	border-radius: 10px;
 	*/
-	width: min(65%, 200px);
+	width: min(100%, 1000px);
 
 	padding: var(--PADDING-SMALL);
 	
@@ -240,6 +241,7 @@ main{
 @media screen and (min-width: 576px){
 	main{
 		margin: 20% 7% 5% var(--MARGINLEFTMAIN-SMALL);
+		gap: 4rem;
 	}
 
 	/*.card{ width: min(80%, 400px); }*/
