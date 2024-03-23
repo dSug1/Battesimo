@@ -52,7 +52,7 @@ html{
 .nowrap{
 	white-space: nowrap;
 }
-a:visited {
+a{
 	color: rgb(213, 224, 247);
 }
 
