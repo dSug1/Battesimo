@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+﻿@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
 /* start RESET*/
 
@@ -17,10 +17,10 @@ html{
 /* VARIABLES */
 :root{
 	/*fonts*/
-	--FONT-FAMILY: "Roboto", sans-serif;
+	--FONT-FAMILY: "Caveat Brush", cursive;
 	--FONT-XS: min(0.5rem, 2.5vh);
 	--FONT-SMALL: min(0.5rem, 2.5vh);
-	--FONT-MEDIUM: clamp(1rem, 3vh, 1.5rem);
+	--FONT-MEDIUM: clamp(0.7rem, 3vh, 1.2rem);
 	--FONT-LARGE: min(1.5rem, 8vh);
 	--FONT-XL: min(1.7rem, 9vh);
 	/*colors*/
@@ -66,6 +66,8 @@ body{
 	min-height: 100vh;
 
 	font-family: var(--FONT-FAMILY);
+	font-weight: 400;
+	font-style: normal;
 	font-size: var(--FONT-SMALL);
 	color: var(--LIGHT-COLOR);
 	/*gap: 1rem;*/
@@ -254,20 +256,17 @@ card p{
 	main{
 		padding: var(--PADDING-MEDIUM);
 	}	
-	header{ top: 0.7%; }
+	header{ top: 2%; }
 	.card{ width: min(80%, 400px); }}
 /*medium screen*/
 @media screen and (min-width: 768px){
+	header{	font-size: var(--FONT-MEDIUM);}
 	.card{ width: min(65%, 600px); }
 	/* .card figure{ flex-flow: column-reverse; } */
 	.card p{ margin: 0.1em 0; }
 	.card figcaption{ margin: 0.1em 0; }}
 /*large screen*/
 @media screen and (min-width: 992px){
-	header{
-		top: 0.7%;
-		font-size: var(--FONT-MEDIUM);
-	}
 	.card{ width: min(70%, 800px); }
 	.card p{ font-size: var(--FONT-LARGE); }}
 /*xlarge screen*/
