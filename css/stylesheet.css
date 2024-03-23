@@ -36,6 +36,7 @@ html{
 	--PADDING-XS: 0.1rem;
 	--PADDING-SMALL: 0.3rem;
 	--PADDING-MEDIUM: 0.7rem;
+	--PADDING-LARGE: 1rem;
 	--BORDER-LIGHT:	2px solid var(--LIGHT-COLOR);
 	--MARGIN-SMALL: 3vw;
 	--MARGINLEFTMAIN-SMALL: 24vw;
@@ -66,7 +67,7 @@ body::before {
 
     background: no-repeat center url("../Assets/image0.JPG");
 	background-size: cover;
-	opacity: .57;
+	opacity: .5;
 
     content: "";
     z-index: -1;
@@ -111,7 +112,8 @@ header{
 	margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	gap: 0.5rem;
+	justify-content: space-around;
 }
 .header__menu-button{
 	background-color: transparent;
@@ -155,6 +157,7 @@ header{
 .header__navigation{
 	display: none;
 	flex-flow: column nowrap;
+	padding-left: var(--PADDING-LARGE);
 	justify-content: flex-start;
 	transform-origin: top center;
 	animation: shownavigation 0.5s ease-in-out forwards;
@@ -265,10 +268,13 @@ main{
 /*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
+/*
 @media (prefers-color-scheme: dark){
 	:root{  --LIGHT-COLOR:rgb(246, 254, 251);
 	}
 }
+*/
+
 /*small screen*/
 @media screen and (min-width: 576px){
 	main{
@@ -288,6 +294,8 @@ main{
 		}
 	header, footer, .card:target figcaption{font-size: var(--FONT-MEDIUM);
 	}
+	.header__title-line{
+		justify-content: space-between;
 	main{
 		margin: 10% 7% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
