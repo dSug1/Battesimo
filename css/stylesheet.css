@@ -210,7 +210,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	/*gap: 4rem;*/
 }
 
@@ -231,8 +231,15 @@ main{
 	border: var(--BORDER-LIGHT);
 	border-radius: 20px;}
 
-
-
+.card:target{ 
+	width: 100%;
+	flex-grow : 1;
+	transition: all 0.2s ease-in-out 0s;
+}
+.card:not(:target){
+	width: 0%;
+	transition: all 0.2s ease-in-out 0s;
+}
 /*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
