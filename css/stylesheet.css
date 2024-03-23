@@ -237,7 +237,6 @@ main{
 		flex-flow: column;
 		align-items: center;
 	}
-
 			.card figure{
 				display: flex;
 				gap: 1rem;
@@ -247,17 +246,15 @@ main{
 					border: var(--BORDER-LIGHT);
 					border-radius: 20px;
 				}
-				.card figcaption{
+				.card:target figcaption{
 					font-weight: 100;
 					font-size: var(--FONT-SMALL);
 					text-align: left;
 					padding: var(--PADDING-SMALL);
 				}
-
-
-		
-
-
+				.card:not(:target) figcaption{
+					display: none;
+				}
 /*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
@@ -285,7 +282,7 @@ main{
 		--HEADER_MENU_BUTTON_SINGLEBAR_TRANSLATION_Y: 25px;
 		--HEADER_MENU_BUTTON_SINGLEBAR_TRANSLATION_Y_NEGATIVE: -25px;
 		}
-	header, footer, .card figcaption{font-size: var(--FONT-MEDIUM);
+	header, footer, .card:target figcaption{font-size: var(--FONT-MEDIUM);
 	}
 	.header__title-line{
 		justify-content: space-between;
@@ -293,7 +290,7 @@ main{
 	main{
 		margin: 10% 7% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
-	.card figcaption{ padding: var(--PADDING-MEDIUM);
+	.card:target figcaption{ padding: var(--PADDING-MEDIUM);
 	}
 	/*.card{ width: min(65%, 600px); }
 	 .card figure{ flex-flow: column-reverse; }
@@ -313,7 +310,7 @@ main{
 }
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
-	header, footer, .card figcaption{ font-size: var(--FONT-LARGE);
+	header, footer, .card:target figcaption{ font-size: var(--FONT-LARGE);
 	}	
 	main{
 		margin: 6.5% 5% 0.5% var(--MARGINLEFTMAIN-LARGE);
