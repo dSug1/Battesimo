@@ -299,6 +299,7 @@ main{
 	}
 	.header__title-line{
 		justify-content: space-between;
+	}
 	main{
 		margin: 10% 7% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
