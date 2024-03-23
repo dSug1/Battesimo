@@ -92,7 +92,7 @@ nav :is(a:hover, a:focus){
 	filter: brightness(150%);
 }
 footer{
-	bottom:0; 	position: sticky; text-align: center;
+	bottom:0; 	position: sticky; text-align: left;
 }
 
 
@@ -215,41 +215,42 @@ main{
 }
 
 /*SETUP OF CARDS*/
-.card{
-	/*scroll-margin-top: 5rem;				/* to be adjusted*/
-	/*width: min(70%, 100px);*/
-	/*
-	border: var(--BORDER-LIGHT);
-	border-radius: 10px;
-	*/
-	width: min(100%, 1000px);
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
-/*
-.card img{
-	border: var(--BORDER-LIGHT);
-	border-radius: 20px;
-}
-*/
-.card:target img{
-	border: var(--BORDER-LIGHT);
-	border-radius: 20px;
-}
-.card:not(:target) img{
-	display: none;
-}
-
-.card:target{ 
-	width: 100%;
-	flex-grow : 1;
-	transition: all 0.2s ease-in-out 0s;
-}
-.card:not(:target){
-	width: 0%;
-	transition: all 0.2s ease-in-out 0s;
-}
+	.card{
+		/*scroll-margin-top: 5rem;				/* to be adjusted*/
+		/*width: min(70%, 100px);*/
+		/*
+		border: var(--BORDER-LIGHT);
+		border-radius: 10px;
+		*/
+		width: min(100%, 1000px);
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+		.card:target{ 
+			width: 100%;
+			flex-grow : 1;
+			transition: all 0.2s ease-in-out 0s;
+		}
+			.card:target img{
+				border: var(--BORDER-LIGHT);
+				border-radius: 20px;
+			}
+			.card:target figcaption{
+				font-weight: 100;
+				font-size: var(--FONT-SMALL);
+				text-align: left;
+			}
+		.card:not(:target){
+			width: 0%;
+			transition: all 0.2s ease-in-out 0s;
+		}
+			.card:not(:target) img{
+				display: none;
+			}
+			.card:not(:target) figcaption{
+				display: none;
+			}
 
 /*END of SETUP OF CARDS*/
 
@@ -268,7 +269,7 @@ main{
 }
 /*medium screen*/
 @media screen and (min-width: 768px){
-	header, footer{	font-size: var(--FONT-MEDIUM);
+	header, footer, .card:target figcaption{font-size: var(--FONT-MEDIUM);
 	}
 	main{
 		margin: 10% 7% 2% var(--MARGINLEFTMAIN-SMALL);
@@ -291,10 +292,13 @@ main{
 }
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
-	header, footer{ font-size: var(--FONT-LARGE);
+	header, footer, .card:target figcaption{ font-size: var(--FONT-LARGE);
 	}	
 	main{
-		margin: 8.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+		margin: 6.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+	}
+	.card:target{ 
+		width: 75%;
 	}
 	/*.card{ width: min(calc(60% - 1rem), 1000px); }
 	.card:target{ width: 75%; }*/
