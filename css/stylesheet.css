@@ -283,6 +283,9 @@ main{
 	main{
 		margin: 6% 5% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
+	.card:target{ 
+		width: 80%;
+	}
 	/*.card{ width: min(70%, 800px); }
 	.card p{ font-size: var(--FONT-LARGE); }*/
 }
