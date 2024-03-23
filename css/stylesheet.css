@@ -221,13 +221,18 @@ main{
 }
 /*small screen*/
 @media screen and (min-width: 576px){
-	/*main{		padding: var(--PADDING-MEDIUM);}	*/
+	main{
+		margin: 5% 7% 5% var(--MARGINLEFTMAIN-SMALL);
+	}
 
 	/*.card{ width: min(80%, 400px); }*/
 }
 /*medium screen*/
 @media screen and (min-width: 768px){
 	header, footer{	font-size: var(--FONT-MEDIUM);}
+	main{
+		margin: 2% 7% 2% var(--MARGINLEFTMAIN-SMALL);
+	}
 	/*.card{ width: min(65%, 600px); }
 	 .card figure{ flex-flow: column-reverse; }
 	.card p{ margin: 0.1em 0; }
@@ -235,13 +240,18 @@ main{
 }
 /*large screen*/
 @media screen and (min-width: 992px){
+	main{
+		margin: 2% 5% 2% var(--MARGINLEFTMAIN-SMALL);
+	}
 	/*.card{ width: min(70%, 800px); }
 	.card p{ font-size: var(--FONT-LARGE); }*/
 }
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
-	body{gap: 3rem;}
 	header, footer{ font-size: var(--FONT-LARGE); }	
+	main{
+		margin: 0.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+	}
 	/*.card{ width: min(calc(60% - 1rem), 1000px); }
 	.card:target{ width: 75%; }*/
 }
