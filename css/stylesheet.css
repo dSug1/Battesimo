@@ -51,6 +51,9 @@ html{
 .nowrap{
 	white-space: nowrap;
 }
+.wrap{
+	white-space: wrap;
+}
 
 /* GENERAL STYLES*/
 body::before {
