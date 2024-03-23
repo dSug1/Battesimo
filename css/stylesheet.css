@@ -209,7 +209,7 @@ header{
 
 
 main{
-	margin: 20% 5% 5% var(--MARGINLEFTMAIN-SMALL);
+	margin: 35% 5% 5% var(--MARGINLEFTMAIN-SMALL);
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
