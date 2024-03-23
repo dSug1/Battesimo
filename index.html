@@ -8,6 +8,12 @@
     <title>Battesimo</title>
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            /*alert('page loaded');*/
+           if (location.hash) location.href = location.hash;
+        });
+    </script>
 </head>
 
 <body>
@@ -34,13 +40,13 @@
         <article id="project1" class="card">
             <figure>
                 <img src="Assets/image3.JPG" alt="" width="720" height="816">       <!-- update the width and the height of the image -->
-                <figcaption><span class="figcaption">Saremo felici di avervi con noi per il battesimo di Mattia il prossimo 14 Aprile, ore 15.00 <a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">nella chiesa di Milano2</a>, e all'aperitivo che seguir&agrave;.</span></figcaption>
+                <figcaption><span class="figcaption"><a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">Saremo felici di avervi con noi per il battesimo di Mattia il prossimo 14 Aprile, ore 15.00 nella chiesa di Milano2, e all'aperitivo che seguir&agrave;.</a></span></figcaption>
             </figure>
         </article>
         <article id="project2" class="card">
             <figure>
                 <img src="Assets/image2.JPG" alt="" width="1441" height="1167">       <!-- update the width and the height of the image -->
-                <figcaption><span class="figcaption">Nous serons heureux de vous avoir avec nous pour le bapt&ecirc;me de Mattia le 14 avril prochain &agrave; l'<a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">&eacute;glise de Milano2</a>, 15.00, puis &agrave; l'ap&eacute;ritif qui suivra.</span></figcaption>
+                <figcaption><span class="figcaption"><a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">Nous serons heureux de vous avoir avec nous pour le bapt&ecirc;me de Mattia le 14 avril prochain &agrave; l'&eacute;glise de Milano2, 15.00, puis &agrave; l'ap&eacute;ritif qui suivra.</a></span></figcaption>
             </figure>
         </article>
     </main>
@@ -53,13 +59,13 @@
         $(document).ready(function(){
             $('body').click(function(event){
                 $("body").css("color", "red");
-                alert('Sign new href executed.');
+                alert('clicked on "body"');
                 $(".header__navigation").css("display", "flex");
                 event.stopPropagation();
             });
         });
     </script>
 -->
-    
+
 </body>
 </html>
