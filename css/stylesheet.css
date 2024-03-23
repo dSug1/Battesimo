@@ -211,15 +211,6 @@ header{
 /*END of HEADER SETUP*/
 
 
-main0{
-	margin: 35% 5% 5% var(--MARGINLEFTMAIN-SMALL);
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	/*gap: 4rem;*/
-}
 
 main{
 	margin: 35% 5% 5% var(--MARGINLEFTMAIN-SMALL);
@@ -231,19 +222,7 @@ main{
 	/*gap: 4rem;*/
 }
 
-.card0{
-	/*scroll-margin-top: 5rem;				/* to be adjusted*/
-	/*width: min(70%, 100px);*/
-	/*
-	border: var(--BORDER-LIGHT);
-	border-radius: 10px;
-	*/
-	width: min(100%, 1000px);
-	flex-grow : 1;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-}
+
 
 /*SETUP OF CARDS*/
 	.card{
