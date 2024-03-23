@@ -27,7 +27,7 @@ html{
 	--FONT-LARGE: min(1.5rem, 8vh);
 	--FONT-XL: min(1.7rem, 9vh);
 	/*colors*/
-	--LIGHT-COLOR: whitesmoke;
+	--LIGHT-COLOR: rgb(249, 254, 247);
 	--HEADER-BGCOLOR: transparent;
 	--HEADER-COLOR: var(--LIGHT-COLOR);
 	--MENU_ICON-BGCOLOR: var(--LIGHT-COLOR);
@@ -261,7 +261,7 @@ main{
 
 /*MEDIA QUERIES*/
 @media (prefers-color-scheme: dark){
-	:root{  --LIGHT-COLOR: rgb(	230	250	230);
+	:root{  --LIGHT-COLOR: rgb(249, 254, 247);
 	}
 }
 /*small screen*/
