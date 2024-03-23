@@ -283,8 +283,10 @@ main{
 	main{
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
+		margin: 0.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
 		/* align-items: stretch; */
 	}
+
 	/*.card{ width: min(calc(33% - 0.25rem), 200px); }
 	.card p{ font-size: var(--FONT-MEDIUM); }
 	.card figcaption{ font-size: var(--FONT-XS); }*/
