@@ -281,7 +281,7 @@ main{
 /*large screen*/
 @media screen and (min-width: 992px){
 	main{
-		margin: 6% 5% 2% var(--MARGINLEFTMAIN-SMALL);
+		margin: 10% 5% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
 	.card:target{ 
 		width: 80%;
@@ -294,7 +294,7 @@ main{
 	header, footer{ font-size: var(--FONT-LARGE);
 	}	
 	main{
-		margin: 3% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+		margin: 8.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
 	}
 	/*.card{ width: min(calc(60% - 1rem), 1000px); }
 	.card:target{ width: 75%; }*/
