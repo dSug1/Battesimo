@@ -227,9 +227,19 @@ main{
 	flex-flow: column;
 	align-items: center;
 }
+/*
 .card img{
 	border: var(--BORDER-LIGHT);
-	border-radius: 20px;}
+	border-radius: 20px;
+}
+*/
+.card:target img{
+	border: var(--BORDER-LIGHT);
+	border-radius: 20px;
+}
+.card:not(:target) img{
+	display: none;
+}
 
 .card:target{ 
 	width: 100%;
@@ -240,6 +250,7 @@ main{
 	width: 0%;
 	transition: all 0.2s ease-in-out 0s;
 }
+
 /*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
@@ -250,10 +261,9 @@ main{
 /*small screen*/
 @media screen and (min-width: 576px){
 	main{
-		margin: 20% 7% 5% var(--MARGINLEFTMAIN-SMALL);
-		gap: 4rem;
+		margin: 15% 7% 5% var(--MARGINLEFTMAIN-SMALL);
+		/*gap: 4rem;*/
 	}
-
 	/*.card{ width: min(80%, 400px); }*/
 }
 /*medium screen*/
@@ -271,7 +281,7 @@ main{
 /*large screen*/
 @media screen and (min-width: 992px){
 	main{
-		margin: 10% 5% 2% var(--MARGINLEFTMAIN-SMALL);
+		margin: 6% 5% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
 	/*.card{ width: min(70%, 800px); }
 	.card p{ font-size: var(--FONT-LARGE); }*/
@@ -281,7 +291,7 @@ main{
 	header, footer{ font-size: var(--FONT-LARGE);
 	}	
 	main{
-		margin: 10% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+		margin: 3% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
 	}
 	/*.card{ width: min(calc(60% - 1rem), 1000px); }
 	.card:target{ width: 75%; }*/
