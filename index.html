@@ -51,8 +51,10 @@
 
     <script>
         $(document).ready(function(){
-            $('#anchor1', '#anchor2').click(function(event){
-                alert('Sign new href executed.');
+            $('body').click(function(event){
+                /*$("body").css("color", "red");*/
+                /*alert('Sign new href executed.');*/
+                $(".header__navigation").css("display", "flex");
                 event.stopPropagation();
             });
         });

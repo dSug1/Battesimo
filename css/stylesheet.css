@@ -29,8 +29,8 @@ html{
 	/*colors*/
 	--LIGHT-COLOR:rgb(246, 254, 251);
 	--HEADER-BGCOLOR: transparent;
-	--HEADER-COLOR: var(--LIGHT-COLOR);
-	--MENU_ICON-BGCOLOR: var(--LIGHT-COLOR);
+	/*--HEADER-COLOR: rgb(154, 143, 79);*/
+	--MENU_ICON-BGCOLOR: white;
 	--NAVIGATION_LIST_COLOR: var(--LIGHT-COLOR);
 	/*general*/
 	--PADDING-XS: 0.1rem;
@@ -126,7 +126,7 @@ header{
 }
 .header__menu-icon, .header__menu-icon::before, .header__menu-icon::after {
 	background-color: var(--MENU_ICON-BGCOLOR);
-	color: var(--HEADER-COLOR);
+	/*color: var(--HEADER-COLOR);*/
 	width: var(--HEADER_MENU_BUTTON_SIZE);
 	height: var(--HEADER_MENU_BUTTON_SINGLEBAR_HEIGHT);
 	border-radius: var(--HEADER_MENU_BUTTON_SINGLEBAR_HEIGHT);
