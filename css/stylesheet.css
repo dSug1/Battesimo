@@ -52,7 +52,7 @@ html{
 	white-space: nowrap;
 }
 .wrap{
-	white-space: wrap;
+	text-wrap: pretty;;
 }
 
 /* GENERAL STYLES*/
