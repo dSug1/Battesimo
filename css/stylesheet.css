@@ -205,33 +205,51 @@ header{
 
 
 main{
-	margin: 10% 5% 5% var(--MARGINLEFTMAIN-SMALL);
+	margin: 20% 5% 5% var(--MARGINLEFTMAIN-SMALL);
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 4rem;
 }
 
+/*SETUP OF CARDS*/
+.card{
+	/*scroll-margin-top: 5rem;				/* to be adjusted*/
+	/*width: min(70%, 100px);*/
+	/*
+	border: var(--BORDER-LIGHT);
+	border-radius: 10px;
+	*/
+	width: min(65%, 200px);
 
+	padding: var(--PADDING-SMALL);
+	
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+/*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
 @media (prefers-color-scheme: dark){
-	:root{  --LIGHT-COLOR: rgb(	230	250	230); }
+	:root{  --LIGHT-COLOR: rgb(	230	250	230);
+	}
 }
 /*small screen*/
 @media screen and (min-width: 576px){
 	main{
-		margin: 5% 7% 5% var(--MARGINLEFTMAIN-SMALL);
+		margin: 20% 7% 5% var(--MARGINLEFTMAIN-SMALL);
 	}
 
 	/*.card{ width: min(80%, 400px); }*/
 }
 /*medium screen*/
 @media screen and (min-width: 768px){
-	header, footer{	font-size: var(--FONT-MEDIUM);}
+	header, footer{	font-size: var(--FONT-MEDIUM);
+	}
 	main{
-		margin: 2% 7% 2% var(--MARGINLEFTMAIN-SMALL);
+		margin: 10% 7% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
 	/*.card{ width: min(65%, 600px); }
 	 .card figure{ flex-flow: column-reverse; }
@@ -241,23 +259,25 @@ main{
 /*large screen*/
 @media screen and (min-width: 992px){
 	main{
-		margin: 2% 5% 2% var(--MARGINLEFTMAIN-SMALL);
+		margin: 10% 5% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
 	/*.card{ width: min(70%, 800px); }
 	.card p{ font-size: var(--FONT-LARGE); }*/
 }
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
-	header, footer{ font-size: var(--FONT-LARGE); }	
+	header, footer{ font-size: var(--FONT-LARGE);
+	}	
 	main{
-		margin: 0.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+		margin: 10% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
 	}
 	/*.card{ width: min(calc(60% - 1rem), 1000px); }
 	.card:target{ width: 75%; }*/
 }
 /*mobile device landscape */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
-	h1{	font-size: var(--FONT-LARGE); }
+	h1{	font-size: var(--FONT-LARGE);
+	}
 	main{
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
@@ -266,5 +286,6 @@ main{
 	/*.card{ width: min(calc(33% - 0.25rem), 200px); }
 	.card p{ font-size: var(--FONT-MEDIUM); }
 	.card figcaption{ font-size: var(--FONT-XS); }*/
-	.nowrap{ white-space: normal; }
+	.nowrap{ white-space: normal;
+	}
 }
