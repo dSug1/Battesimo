@@ -24,7 +24,7 @@ html{
 	--FONT-XS: min(0.5rem, 2.5vh);
 	--FONT-SMALL: min(0.6rem, 2.7vh);
 	--FONT-MEDIUM: clamp(0.7rem, 3vh, 1.2rem);
-	--FONT-LARGE: min(1.5rem, 8vh);
+	--FONT-LARGE: min(2rem, 10vh);
 	--FONT-XL: min(1.7rem, 9vh);
 	/*colors*/
 	--LIGHT-COLOR:rgb(246, 254, 251);
@@ -39,6 +39,7 @@ html{
 	--BORDER-LIGHT:	2px solid var(--LIGHT-COLOR);
 	--MARGIN-SMALL: 3vw;
 	--MARGINLEFTMAIN-SMALL: 24vw;
+	--MARGINLEFTMAIN-LARGE: 36vw;
 	/*navigation*/
 	--HEADER_MENU_BUTTON_SIZE: 34px;
 	--HEADER_MENU_BUTTON_SINGLEBAR_HEIGHT: 3px;
@@ -306,10 +307,10 @@ main{
 	header, footer, .card:target figcaption{ font-size: var(--FONT-LARGE);
 	}	
 	main{
-		margin: 6.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
+		margin: 6.5% 5% 0.5% var(--MARGINLEFTMAIN-LARGE);
 	}
 	.card:target{ 
-		width: 75%;
+		width: 90%;
 	}
 	/*.card{ width: min(calc(60% - 1rem), 1000px); }
 	.card:target{ width: 75%; }*/
