@@ -91,7 +91,7 @@ footer{
 header{
 
 	position: sticky;
-	top: 4.2vh;
+	top: 2%;
 	text-align: center;
 }
 .header__title-line{
@@ -196,7 +196,7 @@ main{
 /*small screen*/
 @media screen and (min-width: 576px){
 	/*main{		padding: var(--PADDING-MEDIUM);}	*/
-	header{ top: 2%; }
+
 	/*.card{ width: min(80%, 400px); }*/}
 /*medium screen*/
 @media screen and (min-width: 768px){
