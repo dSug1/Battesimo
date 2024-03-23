@@ -223,13 +223,16 @@ main{
 	border-radius: 10px;
 	*/
 	width: min(100%, 1000px);
-
-	padding: var(--PADDING-SMALL);
-	
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 }
+.card img{
+	border: var(--BORDER-LIGHT);
+	border-radius: 20px;}
+
+
+
 /*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
