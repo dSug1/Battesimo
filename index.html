@@ -7,7 +7,7 @@
     <meta name="viewport"   content="width=device-width, initial-scale=1.0">
     <title>Battesimo</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,13 +39,13 @@
             <article id="project1" class="card">
                 <figure>
                     <img src="Assets/image3.jpeg" alt="" width="720" height="816">       <!-- update the width and the height of the image -->
-                    <figcaption><span class="figcaption">Saremo felici di avervi con noi per il battesimo di Mattia <a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">il prossimo 14 Aprile, ore 15.00 nella chiesa di Milano2</a>, e all'aperitivo che seguir&agrave;.</span></figcaption>
+                    <figcaption class="figcaption">Saremo felici di avervi con noi per il battesimo di Mattia <a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">il prossimo 14 Aprile, ore 15.00 nella chiesa di Milano2</a>, e all'aperitivo che seguir&agrave;. <span class="highlighted_text">Chiediamo gentile conferma entro il 1&deg; Aprile.</span></figcaption>
                 </figure>
             </article>
             <article id="project2" class="card">
                 <figure>
                     <img src="Assets/image2.JPG" alt="" width="1441" height="1167">       <!-- update the width and the height of the image -->
-                    <figcaption><span class="figcaption">Nous serons heureux de vous avoir avec nous pour le bapt&ecirc;me de Mattia <a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">le 14 avril prochain &agrave; l'&eacute;glise de Milano2, 15.00</a>, puis &agrave; l'ap&eacute;ritif qui suivra.</span></figcaption>
+                    <figcaption class="figcaption">Nous serons heureux de vous avoir avec nous pour le bapt&ecirc;me de Mattia <a href="https://maps.app.goo.gl/vzmsHWcYZNmCH7Ev8">le 14 avril prochain &agrave; l'&eacute;glise de Milano2, 15.00</a>, puis &agrave; l'ap&eacute;ritif qui suivra.</figcaption>
                 </figure>
             </article>
     </main>
@@ -54,17 +54,30 @@
         <p>&copy;Daria &amp; Andr&eacute;</p>
     </footer>
 
-<!--    <script>
+<!--
+    <script>
         $(document).ready(function(){
-            $('body').click(function(event){
-                $("body").css("color", "red");
+            $('#anchor1').click(function(event){
+                /*$("body").css("color", "red");
                 alert('clicked on "body"');
-                $(".header__navigation").css("display", "flex");
+                $(".header__navigation").css("display", "flex");*/
+                $(this).css({"border-color": "#rgb(246, 254, 251)", 
+             "border-width":"1.5px", "border-radius": "5px", "background-color": "rgb(20, 136, 159)",
+             "border-style":"solid"});
+                event.stopPropagation();
+            });
+            $('#anchor2').click(function(event){
+                /*$("body").css("color", "red");
+                alert('clicked on "body"');
+                $(".header__navigation").css("display", "flex");*/
+                $(this).css({"border-color": "#rgb(246, 254, 251)", 
+             "border-width":"1.5px", "border-radius": "5px", "background-color": "rgb(20, 136, 159)",
+             "border-style":"solid"});
                 event.stopPropagation();
             });
         });
     </script>
--->
+--> 
 
 </body>
 </html>

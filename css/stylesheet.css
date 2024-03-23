@@ -28,7 +28,9 @@ html{
 	--FONT-XL: min(1.7rem, 9vh);
 	/*colors*/
 	--LIGHT-COLOR:rgb(246, 254, 251);
+	--HIGHLIGHTED-TEXT: rgb(149, 195, 245);
 	--HEADER-BGCOLOR: transparent;
+	--FIGCAPTION-BGCOLOR: rgb(20, 136, 159);
 	/*--HEADER-COLOR: rgb(154, 143, 79);*/
 	--MENU_ICON-BGCOLOR: white;
 	--NAVIGATION_LIST_COLOR: var(--LIGHT-COLOR);
@@ -55,6 +57,10 @@ html{
 }
 a{
 	color: rgb(246, 254, 251);
+}
+
+.highlighted_text{
+	color: var(--HIGHLIGHTED-TEXT);
 }
 
 /* GENERAL STYLES*/
@@ -189,14 +195,14 @@ header{
 	flex-flow: column nowrap;
 }
 .header__navlistitem{
-	width: 20vw;
+	width: 10%;
 	margin-left: 5%;
 	padding: var(--PADDING-SMALL) var(--PADDING-XS);
 	border-top: 1px solid var(--NAVIGATION_LIST_COLOR);
 	font-style: italic;
 }
 .header__navlistitem:nth-child(1){
-	width: 18vw;
+	width: 10%;
 	margin-left: 4%;
 	padding: var(--PADDING-SMALL) var(--PADDING-XS);
 	border-top: 1px solid var(--NAVIGATION_LIST_COLOR);
@@ -247,6 +253,9 @@ main{
 					border-radius: 20px;
 				}
 				.card:target figcaption{
+					border: var(--BORDER-LIGHT);
+					border-radius: 20px;
+					background-color: var(--FIGCAPTION-BGCOLOR);
 					font-weight: 100;
 					font-size: var(--FONT-SMALL);
 					text-align: left;
