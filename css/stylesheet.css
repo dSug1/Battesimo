@@ -238,7 +238,7 @@ main{
 		border: var(--BORDER-LIGHT);
 		border-radius: 10px;
 		*/
-		width: min(100%, 1000px);
+		width: 100%;
 		display: flex;
 		flex-flow: column;
 		align-items: center;
