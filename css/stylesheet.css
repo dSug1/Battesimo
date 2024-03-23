@@ -53,7 +53,9 @@ html{
 .nowrap{
 	white-space: nowrap;
 }
-
+a{
+	color: rgb(246, 254, 251);
+}
 
 /* GENERAL STYLES*/
 body::before {
@@ -209,20 +211,85 @@ header{
 /*END of HEADER SETUP*/
 
 
-
-main{
-	margin: 20% 5% 5% 5%;
+main0{
+	margin: 35% 5% 5% var(--MARGINLEFTMAIN-SMALL);
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+	/*gap: 4rem;*/
 }
 
-.cardIntro{
+main{
+	margin: 35% 5% 5% var(--MARGINLEFTMAIN-SMALL);
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	/*gap: 4rem;*/
+}
+
+.card0{
+	/*scroll-margin-top: 5rem;				/* to be adjusted*/
+	/*width: min(70%, 100px);*/
+	/*
+	border: var(--BORDER-LIGHT);
+	border-radius: 10px;
+	*/
 	width: min(100%, 1000px);
 	flex-grow : 1;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
+
+/*SETUP OF CARDS*/
+	.card{
+		/*scroll-margin-top: 5rem;				/* to be adjusted*/
+		/*width: min(70%, 100px);*/
+		/*
+		border: var(--BORDER-LIGHT);
+		border-radius: 10px;
+		*/
+		width: min(100%, 1000px);
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+	}
+		.card:target{ 
+			width: 100%;
+			flex-grow : 1;
+			transition: all 0.2s ease-in-out 0s;
+		}
+			.card:target figure{
+				display: flex;
+				gap: 1rem;
+				flex-flow: column wrap;
+			}
+				.card:target img{
+					border: var(--BORDER-LIGHT);
+					border-radius: 20px;
+				}
+				.card:target figcaption{
+					font-weight: 100;
+					font-size: var(--FONT-SMALL);
+					text-align: left;
+					padding: var(--PADDING-SMALL);
+				}
+		.card:not(:target){
+			width: 0%;
+			transition: all 0.2s ease-in-out 0s;
+		}
+			.card:not(:target) img{
+				display: none;
+			}
+			.card:not(:target) figcaption{
+				display: none;
+			}
+
+/*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
 /*
@@ -235,7 +302,7 @@ main{
 /*small screen*/
 @media screen and (min-width: 576px){
 	main{
-		margin: 15% 7% 5% 7%;
+		margin: 15% 7% 5% var(--MARGINLEFTMAIN-SMALL);
 		/*gap: 4rem;*/
 	}
 	/*.card{ width: min(80%, 400px); }*/
@@ -254,7 +321,7 @@ main{
 	.header__title-line{
 		justify-content: space-between;
 	main{
-		margin: 10% 7% 2% 7%;
+		margin: 10% 7% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
 	.card:target figcaption{ padding: var(--PADDING-MEDIUM);
 	}
@@ -266,7 +333,7 @@ main{
 /*large screen*/
 @media screen and (min-width: 992px){
 	main{
-		margin: 10% 5% 2% 5%;
+		margin: 10% 5% 2% var(--MARGINLEFTMAIN-SMALL);
 	}
 	.card:target{ 
 		width: 80%;
@@ -279,7 +346,7 @@ main{
 	header, footer, .card:target figcaption{ font-size: var(--FONT-LARGE);
 	}	
 	main{
-		margin: 6.5% 5% 0.5% 15%;
+		margin: 6.5% 5% 0.5% var(--MARGINLEFTMAIN-LARGE);
 	}
 	.card:target{ 
 		width: 90%;
@@ -294,7 +361,7 @@ main{
 	main{
 		flex-flow: row nowrap;
 		justify-content: space-evenly;
-		margin: 0.5% 5% 0.5% 5%;
+		margin: 0.5% 5% 0.5% var(--MARGINLEFTMAIN-SMALL);
 		/* align-items: stretch; */
 	}
 
