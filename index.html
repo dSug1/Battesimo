@@ -7,6 +7,7 @@
     <meta name="viewport"   content="width=device-width, initial-scale=1.0">
     <title>Battesimo</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,9 +22,9 @@
 
         <nav class="header__navigation">
             <ul class="header__navlist">
-                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#">Home</a></li>
-                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#project1">IT</a></li>
-                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#project2">FR</a></li>
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" id="anchor0" href="#">Home</a></li>
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" id="anchor1" href="#project1">IT</a></li>
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" id="anchor2" href="#project2">FR</a></li>
             </ul>
         </nav>
 
@@ -49,8 +50,11 @@
     </footer>
 
     <script>
-        $('li').on('click', function () {
-            $('body::before').css('opacity', '0');          
+        $(document).ready(function(){
+            $('#anchor1', '#anchor2').click(function(event){
+                alert('Sign new href executed.');
+                event.stopPropagation();
+            });
         });
     </script>
     
