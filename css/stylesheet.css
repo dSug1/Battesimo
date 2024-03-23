@@ -51,9 +51,7 @@ html{
 .nowrap{
 	white-space: nowrap;
 }
-.wrap{
-	text-wrap: pretty;;
-}
+
 
 /* GENERAL STYLES*/
 body::before {
@@ -235,15 +233,19 @@ main{
 			flex-grow : 1;
 			transition: all 0.2s ease-in-out 0s;
 		}
-			.card:target img{
-				border: var(--BORDER-LIGHT);
-				border-radius: 20px;
+			.card:target figure{
+				display: flex;
+				flex-flow: column wrap;
 			}
-			.card:target figcaption{
-				font-weight: 100;
-				font-size: var(--FONT-SMALL);
-				text-align: left;
-			}
+				.card:target img{
+					border: var(--BORDER-LIGHT);
+					border-radius: 20px;
+				}
+				.card:target figcaption{
+					font-weight: 100;
+					font-size: var(--FONT-SMALL);
+					text-align: left;
+				}
 		.card:not(:target){
 			width: 0%;
 			transition: all 0.2s ease-in-out 0s;
