@@ -237,37 +237,7 @@ main{
 		flex-flow: column;
 		align-items: center;
 	}
-		.card:target{ 
-			width: 100%;
-			/*flex-grow : 1;*/
-			transition: all 0.2s ease-in-out 0s;
-		}
-			.card:target figure{
-				display: flex;
-				gap: 1rem;
-				flex-flow: column wrap;
-			}
-				.card:target img{
-					border: var(--BORDER-LIGHT);
-					border-radius: 20px;
-				}
-				.card:target figcaption{
-					font-weight: 100;
-					font-size: var(--FONT-SMALL);
-					text-align: left;
-					padding: var(--PADDING-SMALL);
-				}
-		.card:not(:target){
-			width: 0%;
-			transition: all 0.2s ease-in-out 0s;
-		}
-			.card:not(:target) img{
-				display: none;
-			}
-			.card:not(:target) figcaption{
-				display: none;
-			}
-
+		
 /*END of SETUP OF CARDS*/
 
 /*MEDIA QUERIES*/
