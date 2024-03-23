@@ -22,8 +22,8 @@ html{
 	/*fonts*/
 	--FONT-FAMILY: "Caveat Brush", cursive;
 	--FONT-XS: min(0.5rem, 2.5vh);
-	--FONT-SMALL: min(0.6rem, 2.7vh);
-	--FONT-MEDIUM: clamp(0.7rem, 3vh, 1.2rem);
+	--FONT-SMALL: min(1rem, 2.7vh);
+	--FONT-MEDIUM: clamp(1.5rem, 5vh, 1.8rem);
 	--FONT-LARGE: min(2rem, 10vh);
 	--FONT-XL: min(1.7rem, 9vh);
 	/*colors*/
